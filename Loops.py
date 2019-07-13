@@ -46,3 +46,28 @@
 # else:
 #     print("You win!")
 
+
+# from random import randint
+
+# # Generates a number from 1 through 10 inclusive
+# random_number = randint(1, 10)
+#
+# guesses_left = 3
+# # Start your game!
+# guess = int(input("Your guess: "))
+# while guesses_left > 0:
+#     num = random_number
+#     print(num)
+#     if guess == num:
+#         print("You win!")
+#         break
+#     guesses_left -= 1
+# else:
+#     print("You lose!")
+
+
+print("Counting...")
+
+for i in range(20):
+    print(i)
+
