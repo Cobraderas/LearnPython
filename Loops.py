@@ -73,7 +73,6 @@
 #
 # hobbies = []
 #
-# # Add your code below!
 # for i in range(3):
 #     hobbi = input("Your hobbi is? :")
 #     hobbies.append(str(hobbi))
@@ -86,14 +85,12 @@
 # print("======")
 # word = "eggs!"
 #
-# # Your code here!
 # for a in word:
 #     print(a)
 
 
 # phrase = "A bird in the hand..."
 #
-# # Add your for loop
 # for char in phrase:
 #     if char == "A" or char == "a":
 #         print("X", end="")
@@ -111,7 +108,6 @@
 # for num in numbers:
 #     print(num)
 #
-# # Add your loop below!
 # for num in numbers:
 #     print(num ** 2)
 
@@ -119,7 +115,6 @@
 # d = {'a': 'apple', 'b': 'berry', 'c': 'cherry'}
 #
 # for key in d:
-#     # Your code here!
 #     print(key, d[key])
 
 
@@ -136,7 +131,6 @@
 # list_b = [2, 4, 8, 10, 30, 40, 50, 60, 70, 80, 90]
 #
 # for a, b in zip(list_a, list_b):
-#   # Add your code here!
 #     if a > b:
 #         print(a)
 #     else:
