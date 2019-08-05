@@ -110,10 +110,17 @@
 # # print ['A', 'C', 'E']
 
 
-my_list = list(range(1, 11))
-backwards = my_list[::-1]
-print(backwards)
+# my_list = list(range(1, 11))
+# backwards = my_list[::-1]
+# print(backwards)
 
 
-
-
+# grades = [100, 100, 90, 40, 80, 100, 85, 70, 90, 65, 90, 85, 50.5]
+#
+#
+# def print_grades():  # why is the param needed when is not used?
+#     for i in grades:
+#         print(i)
+#
+#
+# print_grades()
