@@ -95,10 +95,116 @@
 # print(anti_vowel("hello book"))
 
 
-score = {"a": 1, "c": 3, "b": 3, "e": 1, "d": 2, "g": 2,
-         "f": 4, "i": 1, "h": 4, "k": 5, "j": 8, "m": 3,
-         "l": 1, "o": 1, "n": 1, "q": 10, "p": 3, "s": 1,
-         "r": 1, "u": 1, "t": 1, "w": 4, "v": 4, "y": 4,
-         "x": 8, "z": 10}
+# ----------------------------------------------------------------
+
+
+# score = {"a": 1, "c": 3, "b": 3, "e": 1, "d": 2, "g": 2,
+#          "f": 4, "i": 1, "h": 4, "k": 5, "j": 8, "m": 3,
+#          "l": 1, "o": 1, "n": 1, "q": 10, "p": 3, "s": 1,
+#          "r": 1, "u": 1, "t": 1, "w": 4, "v": 4, "y": 4,
+#          "x": 8, "z": 10}
+
 
 # def scrabble_score(word):
+#     # word = input("Insert your word: ")
+#     word = word.lower()
+#     total = 0
+#     for i in word:
+#         total = total + score[i]
+#     # print(total)
+#     return total
+#
+#
+# print(scrabble_score("pie"))
+#
+#
+# def scrabble_score(word):
+#     word = word.lower()
+#     total = 0
+#     for letter in word:
+#         for leter in score:
+#             if letter == leter:
+#                 total = total + score[leter]
+#             return total
+#
+#
+# print(scrabble_score("pizza"))
+
+
+# def censor(text, word):
+#     words = text.split()
+#     result = ''
+#     stars = '*' * len(word)
+#     count = 0
+#     for i in words:
+#         if i == word:
+#             words[count] = stars
+#         count = count + 1
+#     result = ' '.join(words)
+#
+#     return result
+#
+#
+# print(censor("the stars are looking like stars to the stars", "stars"))
+
+
+# def count(sequence, item):
+#     count = 0
+#     for i in sequence:
+#         if i == item:
+#             count = count + 1
+#     return count
+#
+#
+# print(count([1, 2, 1, 1], 1))
+
+
+# def purify(pur):
+#     numbers = []
+#     for char in pur:
+#         if char % 2 == 0:
+#             numbers.append(char)
+#     return numbers
+#
+#
+# print(purify([4, 6, 8, 4, 6]))
+
+
+# def product(list):
+#     total = 1
+#     for i in list:
+#         # print(str(total) + '*' + str(i))
+#         total = total * i
+#     return total
+#
+#
+# print(product([2, 3, 3]))
+
+
+# def remove_duplicates(lists):
+#     new_list = []
+#     for i in lists:
+#         if i not in new_list:
+#             new_list.append(i)
+#     return new_list
+#
+#
+# print(remove_duplicates([4, 5, 6, 6, 4, 3, 5]))
+
+
+def median(alist):
+    alist_sorted = sorted(alist)
+    print(alist_sorted)
+    mid_list = len(alist_sorted) // 2
+    if len(alist) % 2 == 0:
+        e_med = (alist_sorted[mid_list] + alist_sorted[mid_list - 1]) / 2.0
+        return e_med
+    elif len(alist) == 1:
+        return alist_sorted[0]
+    else:
+        o_med = alist_sorted[mid_list]
+        return o_med
+
+
+print(median([41, 94, 38, 76, 59, 25, 19, 63, 81]))
+
