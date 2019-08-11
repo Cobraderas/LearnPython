@@ -140,5 +140,17 @@
 # print(odds)
 # print(middle_third)
 
+# threes_and_fives = [x for x in range(1, 16) if x % 3 == 0 or x % 5 == 0]
+# print(threes_and_fives)
+
+
+# garbled = "!XeXgXaXsXsXeXmX XtXeXrXcXeXsX XeXhXtX XmXaX XI"
+# message = garbled[::-2]
+# print(message)
+
+
+
+
+
 
 
