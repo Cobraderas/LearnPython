@@ -1,7 +1,8 @@
 from selenium import webdriver
 # from time import sleep
 
-driver = webdriver.Chrome("E:\AProgTes\SeleniumProjects\seleniumLoad\chromedriver_win32\chromedriver.exe")
+# driver = webdriver.Chrome("E:\AProgTes\SeleniumProjects\seleniumLoad\chromedriver_win32\chromedriver.exe")
+driver = webdriver.Chrome()
 driver.set_page_load_timeout(20)
 driver.get("https://www.seleniumhq.org/download/")
 # sleep(2)
