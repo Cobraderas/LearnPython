@@ -18,28 +18,30 @@ except:
 print(" =========== ")
 
 try:
-  print("Hello")
+    print("Hello")
 except:
-  print("Something went wrong")
+    print("Something went wrong")
 else:
-  print("Nothing went wrong")
+    print("Nothing went wrong")
 
 # The finally block, if specified, will be executed regardless if the try block raises an error or not.
 try:
-  print(x)
+    print(x)
 except:
-  print("Something went wrong")
+    print("Something went wrong")
 finally:
-  print("The 'try except' is finished")
+    print("The 'try except' is finished")
 
 
 # Try to open and write to a file that is not writable
+# finally:  can be useful to close objects and clean up resources
+
 try:
-  f = open("demofile.txt")
-  f.write("Lorum Ipsum")
+    f = open("demofile.txt")
+    f.write("Lorum Ipsum")
 except:
-  print("Something went wrong when writing to the file")
+    print("Something went wrong when writing to the file")
 finally:
-  f.close()
+    f.close()
 
 
