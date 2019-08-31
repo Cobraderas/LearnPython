@@ -60,4 +60,22 @@
 # with open("TestRead.txt", "w") as textfile:
 #     textfile.write("Success!")
 
+# Python file objects have a closed attribute which
+# is True when the file is closed and False otherwise.
+# By checking file_object.closed, we’ll know whether our
+# file is closed and can call close() on it if it’s still open.
+# ex:
+# f = open("bg.txt")
+# f.closed
+# # False
+# f.close()
+# f.closed
+# # True
 
+with open("TestRead.txt", "w") as my_file:
+    my_file.write("losing the file automaticaly with with and as")
+
+if my_file.closed == False:
+    my_file.close()
+
+print(my_file.closed)
