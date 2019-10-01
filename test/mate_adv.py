@@ -1,5 +1,6 @@
 from .mate import Mate
 
+
 class MateAdv:
     def multiply(self, a, b):
         return a * b

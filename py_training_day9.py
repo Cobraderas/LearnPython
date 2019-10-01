@@ -53,8 +53,14 @@
 # re.split()  # the code is not compilable only serves as example
 # r.split()  # the code is not compilable only serves as example
 
-from Folder_new.mate_adv import MateAdv
-mate = MateAdv()
-print(mate.sum(1, 5))
+from test.mate_adv import MateAdv
+from test import Mate
+from test import *
 
+if __name__ == "__main__":
+    # mate = MateAdv()
+    # print(mate.sum(1, 5))
 
+    mate = Mate()
+    print(mate.sum(1, 2))
+    # matead = MateAdv
