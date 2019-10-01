@@ -57,6 +57,7 @@ from test.mate_adv import MateAdv
 from test import Mate
 from test import *
 
+
 if __name__ == "__main__":
     # mate = MateAdv()
     # print(mate.sum(1, 5))
