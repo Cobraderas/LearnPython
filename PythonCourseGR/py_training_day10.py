@@ -36,4 +36,45 @@ for i in odd_nos(100):
     print(i)
 
 
+def ranger(n):
+    num = 0
+    while num < n:
+        yield num  # it gives your number
+        num += 1
+
+
+print(list(ranger(1000)))
+
+
+class Test:
+    def __init__(self, param):
+        if isinstance(param, int):
+            self.mod = "Integer mode"
+        elif isinstance((param, str)):
+            self.mod = "String mode"
+
+    def print(self):
+        print(self.mod)
+
+
+def init(param):
+    test = Test(param)
+    yield test
+    print("Cleanup")
+
+
+def test_func():
+    test_object = init(1)
+    for item in test_object:
+        item.print()
+
+
+if __name__ == "__main__":
+    test_func()
+
+
+
+
+
+
 
