@@ -1,4 +1,6 @@
 # file operations
+# https://stackabuse.com/file-handling-in-python/
+
 
 # using with that closes the file automatically
 # with open("py_training_day6.py") as f:
@@ -30,9 +32,33 @@
 # for line in lines:
 #     print(line)
 
-f = open("testa.txt", "a")  # appends
-f.write("flu")
+#
+# f = open("testa.txt", "a")  # appends
+# f.write("flu")
 
 
+# f = open("testa.txt", "r+", buffering=0)  # buffering=0 for binary, buffering=1 text mode line buffering
+# f.write("AZERTY")
 
 
+# f = open("testa.txt")
+# f.readline()
+# print(f.tell())
+# f.seek(0)
+# f.readline()
+# print(f.tell())
+#
+# f.seek(25)
+# f.readline()
+# print(f.tell())
+
+
+f = open("testa.txt")
+f.readline()
+print(f.tell())
+f.seek(0, 1)
+print(f.read(5))
+print(f.tell())
+
+# seek(0)  # returns start of file
+# seek(0, 2)  # returns end of file
