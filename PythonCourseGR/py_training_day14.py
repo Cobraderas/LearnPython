@@ -69,3 +69,9 @@ print(esc_text)
 
 if re.match(esc_text, text):
     print("YUPII!")
+
+re.DOTALL
+re.MULTILINE
+re.ASCII
+re.UNICODE
+re.IGNORECASE
