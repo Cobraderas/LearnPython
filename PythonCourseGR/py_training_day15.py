@@ -98,3 +98,52 @@ writer = csv.writer(f)
 
 writer.writerow(["George", "Radu"])
 writer.writerow(["Gigel", "Pantofel"])
+
+
+print("-" * 100)
+
+f = open("output2.csv", "w+", newline='')
+header = ["fn", "ln"]
+writer = csv.DictWriter(f, fieldnames=header)
+writer.writeheader()
+writer.writerow({"fn": "George", "ln": "Radu"})
+
+
+# dict reader use as homework
+
+
+import pickle
+import hmac
+
+
+class Test:
+    def __init__(self, input):
+        self.input = input
+
+    def run(self):
+        print(self.input)
+
+
+runners = [Test("first test"), Test("second test")]
+
+for test in runners:
+    test.run()
+
+pickled_runner = []
+for test in runners:
+    pickled_runner.append(pickle.dumps(test))
+
+print(pickled_runner)
+
+for pickled_test in pickled_runner:
+    pickle.loads(pickled_test).run()
+
+
+hashes = []
+for pt in pickled_runner:
+    hashes.append((pt, hmac.new(b"cheie", pt).hexdigest()))
+print(hashes)
+
+for hash in hashes:
+    print(hmac.compare_digest(hash[1], hmac.new(b"cheie", hash[0]).hexdigest()))
+
