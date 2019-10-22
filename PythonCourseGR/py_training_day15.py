@@ -71,10 +71,30 @@
 # csv
 import csv
 f = open("input.csv")
-reader = csv.reader(f, delimiter=";")  # iterator
+reader = csv.reader(f, delimiter=",")  # iterator
 for line in reader:
     print(line)
 
+print("-" * 100)
+
+f.seek(0, 2)  # walks through file up and down
+
+for line in reader:
+    print(line)
 
 print("-" * 100)
 
+f.seek(0)
+dialect = csv.Sniffer().sniff(f.read(100))
+f.seek(0)
+reader = csv.reader(f, dialect)
+print(csv.Sniffer().has_header(f.read(50)))
+
+# do not forget to go back at the start of the file when using seek
+
+
+f = open("output.csv", "w+", newline='')
+writer = csv.writer(f)
+
+writer.writerow(["George", "Radu"])
+writer.writerow(["Gigel", "Pantofel"])
