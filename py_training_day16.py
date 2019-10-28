@@ -1,5 +1,3 @@
-# DO NOT REMOVE THIS: FOLDER TREE WAS CREATED WRONG AND WILL WORK ONLY FROM ROOT
-
 # subprocess
 
 import subprocess  # permits to run other process from system
