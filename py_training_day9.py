@@ -1,3 +1,5 @@
+# DO NOT REMOVE THIS: FOLDER TREE WAS CREATED WRONG AND WILL WORK ONLY FROM ROOT
+
 # def beauty(func):
 #     def beauty_print(*args, **kwargs):
 #         print("You have added")
