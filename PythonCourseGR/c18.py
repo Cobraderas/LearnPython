@@ -43,18 +43,23 @@ class Math:
 
 class TestMath(unittest.TestCase):
 
+    def setUpClass(cls) -> None:
+        cls.math = Math()
+        cls.tests_input = [(1, 0), (0, 1), (1, 2.0), ("1", "2")]
+
     def test_sum(self):
-        math = Math()
+        # math = Math()
         tests_input = [(1, 0), (0, 1), (1, 2.0), ("1", "2")]
-        for inp in tests_input:
-            result = math.sum(*inp)
+        for inp in self.tests_input:
+            result = self.math.sum(*inp)
             print(type(result))
             self.assertIsInstance(result, int)
 
-    def test_divide(self):
-        math = Math()
+    def test_sum_001(self):
+        # math = Math()
         tests_input = [(1, 0), (0, 1), (1, 2.0), ("1", "2")]
-        for inp in tests_input:
-            result = math.divide(*inp)
+        for inp in self.tests_input:
+            result = self.math.divide(*inp)
             print(type(result))
             self.assertIsInstance(result, int)
+
