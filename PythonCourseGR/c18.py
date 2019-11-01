@@ -62,4 +62,3 @@ class TestMath(unittest.TestCase):
             result = self.math.divide(*inp)
             print(type(result))
             self.assertIsInstance(result, int)
-
